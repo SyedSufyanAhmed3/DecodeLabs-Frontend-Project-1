@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayesha Khan | Frontend Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Ayesha Khan, a frontend developer building clean, responsive and accessible websites with HTML5 and CSS3.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="#home"><span class="logo__dot">Sufyan</span>dev</a>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__greeting">Hello, I'm Syed Sufyan Ahmed</p>
+          <h1 class="hero__title" id="hero-title">Frontend Developer</h1>
+          <p class="hero__intro">I build clean, responsive and accessible websites. I care about semantic HTML, well-organised CSS and pages that are easy to read on any screen.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="#projects">View Projects</a>
+            <a class="button button--outline" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <img class="hero__image" src="sufyan.jpg" width="560" height="480" alt="Illustration of a laptop showing lines of code on a desk">
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <img class="about__image" src="`about.jpg" width="560" height="420" alt="Illustration of a tidy developer workspace with a monitor, notebook and mug" loading="lazy">
+        <div class="about__text">
+          <h2 class="section__title" id="about-title">About me</h2>
+          <p>I'm a frontend developer in training with a focus on turning designs into fast, readable web pages. I started with plain HTML and CSS because strong fundamentals make every other tool easier to learn.</p>
+          <p>I enjoy the point where structure, typography and spacing come together. Frontend is the part of a product people actually see, so I try to make it clear, accessible and dependable.</p>
+          <p>Right now I'm deepening my knowledge of CSS layout, accessibility and version control.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section__title" id="skills-title">Skills</h2>
+        <p class="section__lead">The tools and practices I use to build every page.</p>
+        <ul class="skills">
+          <li class="card skill">
+            <h3 class="skill__name">HTML5</h3>
+            <p class="skill__text">Semantic structure, landmarks and a clear heading outline.</p>
+          </li>
+          <li class="card skill">
+            <h3 class="skill__name">CSS3</h3>
+            <p class="skill__text">Flexbox, Grid, custom properties and maintainable stylesheets.</p>
+          </li>
+          <li class="card skill">
+            <h3 class="skill__name">Responsive Design</h3>
+            <p class="skill__text">Mobile-first layouts that adapt from phone to desktop.</p>
+          </li>
+          <li class="card skill">
+            <h3 class="skill__name">UI/UX Basics</h3>
+            <p class="skill__text">Visual hierarchy, spacing, contrast and readable typography.</p>
+          </li>
+          <li class="card skill">
+            <h3 class="skill__name">Git/GitHub</h3>
+            <p class="skill__text">Version control, commits and sharing work with others.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section__title" id="projects-title">Projects</h2>
+        <p class="section__lead">Three practice projects that show how I approach layout and structure.</p>
+        <div class="projects">
+          <article class="card project">
+            <img class="project__image" src="Weather Now.jpg" width="800" height="500" alt="Weather app interface with a sun and cloud icon" loading="lazy">
+            <div class="project__body">
+              <h3 class="project__title">Weather Now</h3>
+              <p class="project__text">A responsive weather page with a current-conditions panel and a five-day forecast grid.</p>
+              <ul class="tags"><li class="tags__item">HTML5</li><li class="tags__item">CSS Grid</li><li class="tags__item">Responsive</li></ul>
+              <a class="button button--primary project__link" href="#projects">View Project</a>
+            </div>
+          </article>
+          <article class="card project">
+            <img class="project__image" src="Olive & Thyme.jpg" width="800" height="500" alt="Restaurant website mockup with a plate of food and menu cards" loading="lazy">
+            <div class="project__body">
+              <h3 class="project__title">Olive &amp; Thyme</h3>
+              <p class="project__text">A landing page for a small restaurant with a menu, opening hours and a booking form.</p>
+              <ul class="tags"><li class="tags__item">HTML5</li><li class="tags__item">Flexbox</li><li class="tags__item">Forms</li></ul>
+              <a class="button button--primary project__link" href="#projects">View Project</a>
+            </div>
+          </article>
+          <article class="card project">
+            <img class="project__image" src="Sales Dashboard.png" width="800" height="500" alt="Analytics dashboard mockup with stat tiles, a bar chart and a line chart" loading="lazy">
+            <div class="project__body">
+              <h3 class="project__title">Sales Dashboard</h3>
+              <p class="project__text">A static dashboard layout with stat tiles and chart areas, built as a reusable card system.</p>
+              <ul class="tags"><li class="tags__item">CSS3</li><li class="tags__item">Variables</li><li class="tags__item">UI Design</li></ul>
+              <a class="button button--primary project__link" href="#projects">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="contact" aria-labelledby="contact-title">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2 class="section__title" id="contact-title">Contact</h2>
+          <p class="section__lead">Have a project or an opportunity in mind? Send me a message.</p>
+          <ul class="contact__list">
+            <li><span class="contact__label">Email</span><a class="link" href="mailto:syedsufyanahmed771@gmail.com">syedsufyanahmed771@gmail.com</a></li>
+            <li><span class="contact__label">Location</span>Karachi, Pakistan</li>
+            <li><span class="contact__label">Profiles</span>
+              <a class="link" href="https://github.com/">GitHub</a>, <a class="link" href="https://www.linkedin.com/">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <form class="form card" action="#" method="post">
+          <div class="form__group">
+            <label class="form__label" for="name">Name</label>
+            <input class="form__control" type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__control" type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Message</label>
+            <textarea class="form__control form__control--textarea" id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="button button--primary" type="submit">Send message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <a class="logo logo--light" href="#home">Sufyan<span class="logo__dot">.</span>dev</a>
+      <p class="site-footer__copy">&copy; 2026 Sufyan Khan. All rights reserved.</p>
+      <ul class="social">
+        <li><a class="social__link" href="https://github.com/">GitHub</a></li>
+        <li><a class="social__link" href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a class="social__link" href="syedsufyanahmed771@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
